@@ -7,8 +7,8 @@ class SongCard extends StatelessWidget {
   final AssetImage image;
 
   const SongCard({
-    Key key,
-    @required this.image,
+    required Key key,
+    required this.image,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {

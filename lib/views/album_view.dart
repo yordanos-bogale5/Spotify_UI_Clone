@@ -5,13 +5,13 @@ import 'package:spotify_clone/widgets/album_card.dart';
 class AlbumView extends StatefulWidget {
   final ImageProvider image;
 
-  const AlbumView({Key key, this.image}) : super(key: key);
+  const AlbumView({required Key key, required this.image}) : super(key: key);
   @override
   _AlbumViewState createState() => _AlbumViewState();
 }
 
 class _AlbumViewState extends State<AlbumView> {
-  ScrollController scrollController;
+  late ScrollController scrollController;
   double imageSize = 0;
   double initialSize = 240;
   double containerHeight = 500;
@@ -176,12 +176,12 @@ class _AlbumViewState extends State<AlbumView> {
                               AlbumCard(
                                 size: cardSize,
                                 label: "Get Turnt",
-                                image: AssetImage("assets/album3.jpg"),
+                                image: AssetImage("assets/album3.jpg"), key: null, onTap: null,
                               ),
                               AlbumCard(
                                 size: cardSize,
                                 label: "Get Turnt",
-                                image: AssetImage("assets/album5.jpg"),
+                                image: AssetImage("assets/album5.jpg"), key: null, onTap: null,
                               ),
                             ],
                           ),

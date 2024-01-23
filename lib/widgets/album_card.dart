@@ -8,10 +8,10 @@ class AlbumCard extends StatelessWidget {
   final Function onTap;
   final double size;
   const AlbumCard({
-    Key key,
-    this.image,
-    this.label,
-    this.onTap,
+    required Key key,
+    required this.image,
+    required this.label,
+    required this.onTap,
     this.size = 120,
   }) : super(key: key);
 
